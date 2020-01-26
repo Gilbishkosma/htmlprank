@@ -2,6 +2,13 @@
 	"manifest_version":2,
 	"name":"HTML Prank",
 	"version":"1.0",
+
+	"default_locale": "en",
+	"description": "Change The content of any website using HTMLPrank",
+	"author":"Gilbish Kosma",
+
+
+
 	"content_scripts":[
 		{
 			"matches":[
