@@ -2,8 +2,6 @@
 	"manifest_version":2,
 	"name":"HTML Prank",
 	"version":"1.0",
-
-	"default_locale": "en",
 	"description": "Change The content of any website using HTMLPrank",
 	"author":"Gilbish Kosma",
 
@@ -17,7 +15,7 @@
 			"js":["content.js"]
 		}
 	],
-	"permissions":["tabs"],
+	"permissions":["activeTab"],
 	"browser_action":{
 		"default_icon":"cat.png",
 		"default_popup":"popup.html",
