@@ -1,24 +1,21 @@
 {
-	"manifest_version":2,
-	"name":"HTML Prank",
-	"version":"1.0",
-	"description": "Change The content of any website using HTMLPrank",
-	"author":"Gilbish Kosma",
+  "manifest_version": 3,
+  "name": "HTML Prank",
+  "version": "1.2",
+  "description": "Change The content of any website using HTMLPrank",
+  "author": "Gilbish Kosma",
 
-
-
-	"content_scripts":[
-		{
-			"matches":[
-				"<all_urls>"
-			],
-			"js":["content.js"]
-		}
-	],
-	"permissions":["activeTab"],
-	"browser_action":{
-		"default_icon":"cat.png",
-		"default_popup":"popup.html",
-		"default_title":"A POPUP will come here"
-	}
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["activeTab"],
+  "host_permissions": ["*://*/*"],
+  "browser_action": {
+    "default_icon": "cat.png",
+    "default_popup": "popup.html",
+    "default_title": "A POPUP will come here"
+  }
 }
